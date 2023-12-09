@@ -3,7 +3,7 @@ const CryptoModel = require("../model/Crypto.schema");
 
 const saveCryptoDataToDB = require("../utils/saveCryptoDataToDB");
 
-const url = process.env.MONGO_URL;
+const url = "mongodb+srv://saurav:saurav@cluster0.lydlfoa.mongodb.net/app?retryWrites=true&w=majority";
 
 const  connectDB= async () => {
     try {

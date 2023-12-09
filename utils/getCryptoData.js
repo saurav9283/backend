@@ -1,5 +1,5 @@
 const axios = require('axios');
-const url=process.env.CRYPTO_API_URL;
+const url="CRYPTO_API_URL=https://api.wazirx.com/api/v2/tickers";
 const getCryptoData = async () => {
     const response = await axios.get(url);
     const data = response.data;
