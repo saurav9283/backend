@@ -7,6 +7,7 @@ const saveCryptoDataToDB = async () => {
       const cryptoData = await getCryptoData();
       CryptoModel.insertMany(cryptoData);
       console.log('Data successfully inserted!')
+      // return cryptoData;
     } catch (err) {
         console.log('Error while inserting data')
       console.log(err);
