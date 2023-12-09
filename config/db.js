@@ -9,7 +9,7 @@ const  connectDB= async () => {
     try {
         await mongoose.connect(url);
         console.log("Database Connected!");
-        // await CryptoModel.collection.drop() 
+        await CryptoModel.collection.drop() 
         // Drop the collection before adding new data
 
         console.log("Collection Dropped! For adding New Data")
